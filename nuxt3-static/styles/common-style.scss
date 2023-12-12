@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import "global-variables";
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: #000;
+  color: #fff;
+}
+
+html {
+  font-family: $body-font-family;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  -webkit-font-feature-settings: "palt";
+  height: -webkit-fill-available;
+}
+
+.common-page-view {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+
+  .page-header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .contents-area {
+    position: relative;
+    width: 910px;
+    margin: 0 auto 0 auto;
+    padding-top: 205px;
+
+    .page-contents-title {
+      position: relative;
+      font-size: 52px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      width: 100%;
+      margin-bottom: 52px;
+    }
+
+    .contents-body-sec {
+      position: relative;
+      width: 100%;
+      margin-bottom: 54px;
+
+      .sec-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .sec-contents {
+        p {
+          line-height: 1.6em;
+        }
+      }
+    }
+  }
+}
